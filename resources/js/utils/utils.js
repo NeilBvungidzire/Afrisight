@@ -1,0 +1,1 @@
+window.ClipboardJS = require('clipboard');

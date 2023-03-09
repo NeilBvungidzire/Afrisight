@@ -1,0 +1,7 @@
+/**
+
+!/supervisord.dev.conf
+!/supervisord.pro.conf
+!/supervisord.acc.conf
+!/init.sh
+!/php-ini-overrides.ini

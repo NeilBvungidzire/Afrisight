@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /unsubscribe
+Disallow: /contacts/form
+Disallow: /profile
+Disallow: /profiling
+Disallow: /register/*
+Disallow: /login/*
+Disallow: /marketplace
+Disallow: /invitation
+Disallow: /survey-redirect
+Disallow: /admin

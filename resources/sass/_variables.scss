@@ -1,0 +1,37 @@
+// Color system
+$white                : #fff;
+
+$color-facebook       : #4267B2;
+$color-google         : #DD4B39;
+
+$old-lace             : #FDF3E6;
+$monte-carlo          : #8fccbc;
+$shark                : #1a1d25;
+$lynch                : #69799d;
+
+$primary              : darken($monte-carlo, 20%);
+$secondary            : $old-lace;
+$success              : $monte-carlo;
+$info                 : $lynch;
+//$warning:       $yellow !default;
+//$danger:        $red !default;
+//$light:         $gray-100 !default;
+//$dark:          $gray-800 !default;
+
+// Body
+$body-bg              : $old-lace;
+
+// Navbar
+$navbar-bg            : $white;
+
+// Grid containers
+$container-max-widths : ();
+$container-max-widths : map-merge(
+        (
+            sm: 100%,
+            md: 100%,
+            lg: 960px,
+            xl: 1140px
+        ),
+        $container-max-widths
+);

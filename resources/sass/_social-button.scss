@@ -1,0 +1,39 @@
+.btn {
+
+    &__icon {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        padding: 0.375rem .5rem;
+        width: ((1.5 * 1.25rem) + 1rem);
+        border-right: $btn-border-width solid transparent;
+
+        svg {
+            fill: currentColor;
+            height: 1em;
+        }
+    }
+
+    &-facebook,
+    &-google {
+        position: relative;
+        padding-left: ((1.5 * 1.25rem) + 2rem);
+    }
+
+    &-facebook {
+        @include button-variant($color-facebook, $color-facebook);
+
+        .btn__icon {
+            border-color: darken($color-facebook, 5%);
+        }
+    }
+
+    &-google {
+        @include button-variant($color-google, $color-google);
+
+        .btn__icon {
+            border-color: darken($color-google, 5%);
+        }
+    }
+}

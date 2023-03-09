@@ -1,0 +1,33 @@
+.bullet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+    &__media {
+        font-size: 4rem;
+        border-radius: 50%;
+        border: $border-width solid $border-color;
+        width: 8rem;
+        height: 8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 1rem;
+        flex-shrink: 0;
+        color: $secondary;
+        background-color: $success;
+
+        svg {
+            fill: currentColor;
+            width: auto;
+            height: 1em;
+        }
+    }
+
+    &__title {
+        font-size: 2rem;
+        margin: 1rem 0;
+    }
+}

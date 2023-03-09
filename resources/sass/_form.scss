@@ -1,0 +1,22 @@
+.form-questionnaire {
+
+    .form-check {
+        padding-top: $spacer / 3;
+        padding-bottom: $spacer / 3;
+    }
+
+    .is-invalid .invalid-feedback {
+        display: block;
+    }
+}
+
+.form-group-password {
+    margin-top: 2.2rem;
+    position: relative;
+
+    #toggle-password {
+        position: absolute;
+        right: 0;
+        top: -30px;
+    }
+}

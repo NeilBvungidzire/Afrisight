@@ -1,0 +1,70 @@
+.navbar {
+    background-color: $navbar-bg;
+    border-bottom: $border-width solid $border-color;
+
+    .navbar-brand {
+        padding-top: 0;
+        padding-bottom: 0;
+
+        img {
+            height: 40px;
+            width: auto;
+        }
+    }
+
+    .dropdown-menu {
+        display: block;
+    }
+
+    .nav-item .separator {
+        display: block;
+        height: 100%;
+        margin-left: 1em;
+        margin-right: 1em;
+        border-right: 1px #eee solid;
+    }
+
+    .nav-link-user-avatar {
+        display: none;
+    }
+
+    .user-avatar {
+        padding: $navbar-nav-link-padding-x;
+        border: 1px solid #eee;
+        border-radius: 50%;
+        background-color: $secondary;
+        display: inline-block;
+
+        span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 1.5em;
+            height: 1.5em;
+
+            svg {
+                height: 1.25em;
+                fill: currentColor;
+            }
+        }
+    }
+
+    @media (min-width: map-get($grid-breakpoints, 'xl')) {
+
+        &.navbar-expand-xl {
+
+            .dropdown-menu {
+                display: none;
+
+                &.show {
+                    display: block;
+                }
+            }
+
+            .nav-link-user-avatar {
+                display: block;
+                padding: 0;
+            }
+        }
+    }
+}

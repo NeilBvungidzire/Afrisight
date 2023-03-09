@@ -1,0 +1,26 @@
+/node_modules
+/storage/*.key
+/vendor
+.env
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+
+/public/mix-manifest.json
+/public/images
+/public/js/**
+/public/css/**
+!/public/js/.gitkeep
+!/public/css/.gitkeep
+/public/vendor/**
+
+/.idea
+
+# Ignore test project configs
+config/projects/test_*.php
+
+# Sandboxed
+/routes/sandbox.php
+/temp_infra
